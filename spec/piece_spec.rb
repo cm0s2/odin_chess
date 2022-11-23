@@ -50,10 +50,14 @@ describe Piece do
 
   describe '#is_white?' do
     context 'when the color is white' do
+      xit 'should return true' do
+      end
       
     end
     
     context 'when the color is black' do
+      xit 'should return false' do
+      end
     end
   end
 end

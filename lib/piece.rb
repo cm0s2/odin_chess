@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 
 class Piece
-  def initialize(is_white)
+  def initialize(color)
     @killed = false
-    @is_white = is_white
+    @color = color
   end
 
   def killed?
@@ -19,6 +19,10 @@ class Piece
   end
 
   def is_white?
-    @is_white
+    @color == :white
+  end
+
+  def to_s
+    @unicode_characters[@color]
   end
 end
